@@ -12,7 +12,6 @@ main {
 
 .left {
   display: grid;
-  grid-template-rows: auto auto 1fr auto;
   gap: calc(var(--vw) * 1vw);
 }
 
@@ -72,12 +71,12 @@ main {
   display: flex;
   flex-flow: column;
 
-  justify-content: center;
+  justify-content: start;
 }
 .left-center h2 {
-  font-size: calc(var(--vw) * 6vw);
+  font-size: calc(var(--vw) * 5vw);
   font-weight: 300;
-  line-height: calc(var(--vw) * 6.9vw);
+  line-height: calc(var(--vw) * 5.9vw);
 }
 
 .left-center h2:nth-child(2),
@@ -260,7 +259,8 @@ img {
 
   .left {
     grid-template-rows: auto 1fr auto;
-    gap: calc(var(--vw) * 3vw);
+    gap: calc(var(--vw) * 5vw);
+    height: 50%;
   }
 
   .left-center h2 {
@@ -272,5 +272,9 @@ img {
   .left-bottom {
     font-size: calc(var(--vw) * 2vw);
     padding: calc(var(--vw) * 1vw);
+  }
+
+  figure {
+    aspect-ratio: 1 / 0.6;
   }
 }

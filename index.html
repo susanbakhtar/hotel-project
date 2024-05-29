@@ -20,6 +20,8 @@
     />
 
     <link rel="stylesheet" href="./css/style.css" />
+
+    <link rel="stylesheet" href="./script.js" />
   </head>
   <body>
     <main>
@@ -80,14 +82,21 @@
       <!-- right -->
       <div class="right">
         <figure>
-          <video
+          <!-- <video
             autoplay
             muted
             loop
             playsinline
             src="https://videos.pexels.com/video-files/8243345/8243345-sd_540_960_30fps.mp4"
-          ></video>
+          ></video> -->
 
+          <video id="myVideo" autoplay muted loop playsinline>
+            <source
+              src="https://videos.pexels.com/video-files/8243345/8243345-sd_540_960_30fps.mp4"
+              type="video/mp4"
+            />
+            مرورگر شما از ویدیوی HTML5 پشتیبانی نمی‌کند.
+          </video>
           <video
             autoplay
             muted
